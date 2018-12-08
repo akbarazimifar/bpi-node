@@ -1,0 +1,40 @@
+{
+  "name": "bpi-node",
+  "version": "1.0.0",
+  "description": "pasargad payment gateway module",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon dev/test.js --exec babel-node --presets @babel/preset-env",
+    "dev": "nodemon lib/bin/www --exec babel-node --presets es2015,stage-2",
+    "build": "babel lib -d dist --presets es2015,stage-2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alinjf/bpi-node.git"
+  },
+  "keywords": [
+    "pasargad",
+    "bpi",
+    "bank",
+    "pasargad",
+    "nodejs"
+  ],
+  "author": "ali najafi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alinjf/bpi-node/issues"
+  },
+  "homepage": "https://github.com/alinjf/bpi-node#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-preset-es2015": "^6.24.1",
+    "path": "^0.12.7"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "fs": "0.0.1-security",
+    "node-rsa": "^1.0.1"
+  }
+}
